@@ -1,0 +1,11 @@
+node_modules
+.nuxt
+.output
+.env
+.DS_Store
+supabase/.branches
+supabase/.temp
+
+# Environment files
+.env.*
+!.env.example
