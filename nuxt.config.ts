@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      titleTemplate: '%s · Korea IRL',
+      titleTemplate: '%s · Travelmaker',
       meta: [{ name: 'description', content: 'Travel Korea like you actually live here.' }],
     },
   },

@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --brand-ink: #15171a;
-  --brand-muted: #6b7280;
+  --brand-ink: #111316;
+  --brand-muted: #9ca3af;
   --brand-surface: #ffffff;
   --brand-bg: #f7f7f5;
   --brand-border: #e5e7eb;
-  --brand-accent: #e85a45;
+  --brand-accent: #ff5a4f;
+  --brand-navy: #1e3a8a;
 }
 html { scroll-behavior: smooth; }
 body {
