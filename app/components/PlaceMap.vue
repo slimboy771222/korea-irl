@@ -24,18 +24,7 @@ onMounted(async () => {
   const maplibregl = await import('maplibre-gl')
   map = new maplibregl.Map({
     container: mapElement.value,
-    style: {
-      version: 8,
-      sources: {
-        osm: {
-          type: 'raster',
-          tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
-          tileSize: 256,
-          attribution: '© OpenStreetMap contributors',
-        },
-      },
-      layers: [{ id: 'osm', type: 'raster', source: 'osm' }],
-    },
+    style: 'https://tiles.openfreemap.org/styles/liberty',
     center: coordinates(),
     zoom: props.zoom,
   })
@@ -56,5 +45,5 @@ onBeforeUnmount(() => map?.remove())
 </script>
 
 <template>
-  <div ref="mapElement" class="aspect-square overflow-hidden rounded-2xl" :aria-label="`${label} map`" />
+  <div ref="mapElement" lang="en" class="aspect-square overflow-hidden rounded-2xl" :aria-label="`${label} map`" />
 </template>
