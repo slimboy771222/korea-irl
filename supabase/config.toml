@@ -16,12 +16,18 @@ port = 54323
 enabled = true
 site_url = "http://localhost:3000"
 additional_redirect_urls = ["http://127.0.0.1:3000"]
-
 [storage]
 enabled = true
 file_size_limit = "10MiB"
-
 [storage.buckets.place-images]
+public = true
+file_size_limit = "5MiB"
+allowed_mime_types = [
+  "image/jpeg",
+  "image/png",
+  "image/webp"
+]
+[storage.buckets.site-images]
 public = true
 file_size_limit = "5MiB"
 allowed_mime_types = [
